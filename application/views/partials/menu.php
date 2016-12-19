@@ -23,9 +23,12 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-           <?php echo ($this->uri->segment(1) == "home" ? "<li class='active'>" : "<li>") ?><a href="<?php echo base_url()?>home">Overview <span class="sr-only">(current)</span></a></li>
+           <?php echo ($this->uri->segment(1) == "home/" ? "<li class='active'>" : "<li>") ?><a href="<?php echo base_url()?>home">Overview <span class="sr-only">(current)</span></a></li>
             <?php echo ($this->uri->segment(1) == "mall" ? "<li class='active'>" : "<li>") ?><a href="<?php echo base_url()?>mall">Tempat Perbelanjaan</a></li>
             <?php echo ($this->uri->segment(1) == "restoran" ? "<li class='active'>" : "<li>") ?><a href="<?php echo base_url()?>restoran">Restoran</a></li>            
-          </ul>          
+          </ul>
+          <ul class="nav nav-sidebar">          
+            <?php echo ($this->uri->segment(2) == "pass" ? "<li class='active'>" : "<li>") ?><a href="<?php echo base_url()?>home/pass">Ubah Password</a></li>            
+          </ul>                    
         </div>
 

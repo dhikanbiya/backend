@@ -32,10 +32,10 @@
                 <input type="password" class="form-control" name="password" placeholder="Password" required>
                 <button class="btn btn-lg btn-primary btn-block" type="submit">
                     Sign in</button>               
-                <a href="#" class="pull-right need-help">Forgot Password</a><span class="clearfix"></span>
+                <!-- <a href="#" class="pull-right need-help">Forgot Password</a><span class="clearfix"></span> -->
                 </form>
             </div>
-            <a href="#" class="text-center new-account">Create an account </a>
+            <!-- <a href="#" class="text-center new-account">Create an account </a> -->
         </div>
     </div>
 </div>

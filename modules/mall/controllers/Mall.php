@@ -311,21 +311,31 @@ public function update_event($id='NULL'){
 }
 
 public function destroy($id){
-  $query = $this->Mall_model->destroy($id);
-  if($query){
-    redirect('mall');
+  if($this->session->userdata('logged_in')){
+    $query = $this->Mall_model->destroy($id);
+    if($query){
+      redirect('mall');
+    }else{
+      redirect('home');
+    }  
   }else{
-    redirect('home');
+    redirect('auth');
   }
+  
 }
 
 public function delete($id){
-  $query = $this->Mall_model->delete($id);
-  if($query){
-    redirect('mall');
+  if($this->session->userdata('logged_in')){
+    $query = $this->Mall_model->delete($id);
+    if($query){
+      redirect('mall');
+    }else{
+      redirect('home');
+    }  
   }else{
-    redirect('home');
+    redirect('auth');
   }
+  
 }
 
 
