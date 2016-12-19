@@ -149,12 +149,12 @@ public function create_event(){
       $params = array(
         'name' => $this->input->post('name'),
         'lat' => $this->input->post('latitude'),
-        'long' => $this->input->post('longitude'),
+        'lng' => $this->input->post('longitude'),
         'image' => $this->upload->data('file_name')
       );
       $query = $this->Mall_model->insert($params);
       if($query){
-        redirect('Mall/index');
+        redirect('mall/index');
       }else{
         echo "error";
       }
@@ -222,7 +222,7 @@ public function update($id='NULL'){
       $params = array(
         'name' => $this->input->post('name'),
         'lat' => $this->input->post('latitude'),
-        'long' => $this->input->post('longitude')        
+        'lng' => $this->input->post('longitude')        
       );
     }
     else
@@ -231,7 +231,7 @@ public function update($id='NULL'){
       $params = array(
         'name' => $this->input->post('name'),
         'lat' => $this->input->post('latitude'),
-        'long' => $this->input->post('longitude'),
+        'lng' => $this->input->post('longitude'),
         'image' => $this->upload->data('file_name')
       );
       $img = $this->input->post('image');

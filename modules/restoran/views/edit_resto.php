@@ -17,7 +17,7 @@
             </div>
             <div class="form-group">
               <label for="longitude">Longitude</label>
-              <input type="text" name="longitude" class="form-control" value="<?php echo $c->long;?>">
+              <input type="text" name="longitude" class="form-control" value="<?php echo $c->lng;?>">
             </div>
             <div class="form-group">
               <label for="longitude">Jam Buka</label>

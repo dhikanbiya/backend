@@ -64,7 +64,7 @@ class Restoran extends MX_Controller {
        $params = array(
          'name' => $this->input->post('name'),
          'lat' => $this->input->post('latitude'),
-         'long' => $this->input->post('longitude'),
+         'lng' => $this->input->post('longitude'),
          'image' => $this->upload->data('file_name'),
          'open' => $this->input->post('open'),
          'close' => $this->input->post('close')
@@ -136,7 +136,7 @@ class Restoran extends MX_Controller {
        $params = array(
          'name' => $this->input->post('name'),
          'lat' => $this->input->post('latitude'),
-         'long' => $this->input->post('longitude'),        
+         'lng' => $this->input->post('longitude'),        
          'open' => $this->input->post('open'),        
          'close' => $this->input->post('close'),        
        );
@@ -147,7 +147,7 @@ class Restoran extends MX_Controller {
        $params = array(
          'name' => $this->input->post('name'),
          'lat' => $this->input->post('latitude'),
-         'long' => $this->input->post('longitude'),
+         'lng' => $this->input->post('longitude'),
          'open' => $this->input->post('open'),
          'close' => $this->input->post('close'),
          'image' => $this->upload->data('file_name')
