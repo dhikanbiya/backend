@@ -8,7 +8,7 @@ class Home_model extends CI_Model {
   }
 
  public function getPass($id){
- 	$q = $this->db->get_where('tbl_account',array('id'=>$id));
+ 	$q = $this->db->get_where('tbl_account_backend',array('id'=>$id));
  	foreach($q->result() as $r){
  		return $r->password;
  	}
@@ -16,7 +16,7 @@ class Home_model extends CI_Model {
 
  public function updatePass($params,$id){
  	$this->db->where(array('id' => $id));
- 	return $this->db->update('tbl_account', $params); 
+ 	return $this->db->update('tbl_account_backend', $params); 
  }
 
 
