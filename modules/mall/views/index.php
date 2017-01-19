@@ -19,7 +19,7 @@
                 <td><?php echo $c->name; ?></td>
                 <td><?php echo $c->lat; ?></td>
                 <td><?php echo $c->lng; ?></td>
-                <td></td>
+                <td><?php echo $c->user;?></td>
                 <td><a href="<?php echo base_url()?>mall/events/<?php echo $c->id; ?>"><i class="glyphicon glyphicon-calendar"></i>event</a>&nbsp;&nbsp;<a href="<?php echo base_url();?>mall/edit/<?php echo $c->id?>"><i class="glyphicon glyphicon-edit"></i>edit</a>&nbsp;&nbsp;<a href="<?php echo base_url()?>mall/destroy/<?php echo $c->id;?>"><i class="glyphicon glyphicon-trash"></i>hapus</a></td>
               </tr>
               <?php endforeach?>

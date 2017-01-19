@@ -67,7 +67,8 @@ class Restoran extends MX_Controller {
          'lng' => $this->input->post('longitude'),
          'image' => $this->upload->data('file_name'),
          'open' => $this->input->post('open'),
-         'close' => $this->input->post('close')
+         'close' => $this->input->post('close'),
+         'user' => $this->session->logged_in['username']
 
        );
        $query = $this->Restoran_model->insert($params);

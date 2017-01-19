@@ -150,7 +150,8 @@ public function create_event(){
         'name' => $this->input->post('name'),
         'lat' => $this->input->post('latitude'),
         'lng' => $this->input->post('longitude'),
-        'image' => $this->upload->data('file_name')
+        'image' => $this->upload->data('file_name'),
+        'user' =>$this->session->logged_in['username']
       );
       $query = $this->Mall_model->insert($params);
       if($query){
