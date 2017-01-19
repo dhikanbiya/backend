@@ -101,16 +101,21 @@ public function create_event(){
 
   public function events($id='NULL'){
     if($this->session->userdata('logged_in')){      
-      $query = $this->Mall_model->show_events($id);
+      // $query = $this->Mall_model->show_events($id);
       $data['details'] = $this->Mall_model->mall_details($id);
-      if($query){
-        $data['content'] = $query;
+      // if($query){
+      //   $data['content'] = $query;
+      //   $this->load->view('partials/header');
+      //   $this->load->view('events',$data);
+      //   $this->load->view('partials/footer');  
+      // }else{
+      //   redirect('Mall'); 
+      // }
+
+        $data['content'] = $this->Mall_model->show_events($id);
         $this->load->view('partials/header');
         $this->load->view('events',$data);
         $this->load->view('partials/footer');  
-      }else{
-        redirect('Mall'); 
-      }
       
     }else{
       redirect('Auth');
