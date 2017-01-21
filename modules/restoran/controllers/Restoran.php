@@ -28,7 +28,7 @@ class Restoran extends MX_Controller {
       $this->load->view('add_resto',$data);
       $this->load->view('partials/footer');
     }else{
-      redirect('Auth');
+      redirect('auth');
     }
   }
 

@@ -5,7 +5,7 @@
         <h1 class="page-header">Tambah Restoran</h1>
       <?php echo $error;?>
       <?php echo validation_errors();?>
-        <form method="post" action="<?php echo base_url();?>Restoran/create" enctype="multipart/form-data">
+        <form method="post" action="<?php echo base_url();?>restoran/create" enctype="multipart/form-data">
           <div class="form-group">
             <label for="name">Nama Restoran</label>
             <input type="name" name="name" class="form-control"  placeholder="Nama">
